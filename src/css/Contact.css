@@ -1,0 +1,16 @@
+.contact-wrapper {
+  background-image: url(../images/contact.jpeg);
+  background-size: contain;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  bottom: 3.5rem;
+  z-index: 2;
+}
+
+.form-wrapper {
+  padding: 25%;
+  color: white;
+  width: 100vh;
+  z-index: 10000000;
+}

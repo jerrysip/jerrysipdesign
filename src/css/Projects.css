@@ -1,0 +1,134 @@
+.hair-container {
+  display: flex;
+  padding-top: 2rem;
+  height: 60vh;
+  background: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  top: 80vh;
+}
+
+h2,
+h5,
+p {
+  text-align: center;
+}
+
+h2,
+h5 {
+  font-family: "Libre Caslon Display", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  height: 17px;
+  font-size: 12.5px;
+}
+
+.hair-detail {
+  padding-top: 2rem;
+}
+
+.illission-button,
+.camp-button {
+  background-color: white;
+
+  border: none;
+
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.splitend-button,
+.hair-button {
+  background-color: black;
+  color: white;
+
+  border: none;
+
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.splitend-button:hover,
+.hair-button:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+.illission-button:hover,
+.camp-button:hover {
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+.camp-photo,
+.illission-photo {
+  border: 1px solid white;
+}
+
+@media (max-width: 991px) {
+  .se-photo {
+    position: relative;
+    right: 7.5rem;
+  }
+  .splitend-detail {
+    position: relative;
+    bottom: 4rem;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    left: 0.75rem;
+  }
+  .camp-photo {
+    width: 450px;
+    position: relative;
+    left: 0.5rem;
+    bottom: 5rem;
+  }
+  .camp-detail {
+    position: relative;
+    bottom: 4rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+  }
+  .illission-photo {
+    width: 475px;
+    position: relative;
+    left: 0.4rem;
+    bottom: 5rem;
+  }
+  .illission-detail {
+    position: relative;
+    bottom: 4rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+  }
+
+  .hair {
+    width: 475px;
+    position: relative;
+    left: 0.3rem;
+  }
+  .hair-detail {
+    position: relative;
+    bottom: 4rem;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hair-photo {
+    padding-left: 3rem;
+  }
+  .hair-detail {
+    padding-top: 1rem;
+  }
+}
