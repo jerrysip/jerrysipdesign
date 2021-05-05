@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import me from "../images/me2.jpg";
 import "../css/Resume.css";
+import { Container, Col, Row } from "react-bootstrap";
 
 class Resume extends Component {
   render() {
     return (
       <>
-        <h1 className="aboutheader">About Me</h1>
+        {/* <h1 className="aboutheader">About Me</h1>
         <div className="resume-wrapper">
           <div className="about-me">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -22,6 +23,43 @@ class Resume extends Component {
           <div className="about-photo">
             <img src={me} height="500px" alt="me"></img>
           </div>
+        </div> */}
+
+        <div className="resume-wrapper">
+          <Container fluid className="mt-5 pt-5 ml-3 pl-0 pl-lg-5 ml-lg-5">
+            <Row>
+              <Col xs={12} lg={7} className=" text-center text-white">
+                <h1 className="about-me">About Me</h1>
+                <div className="about-me mt-3">
+                  I am a graduate from NuCamp’s JavaScript Full-Stack coding
+                  Bootcamp, and currently studying to get my Bachelor’s Degree
+                  in Computer Science at the University of the People. Prior to
+                  programming, I was a hairdresser for 12 years. I like to
+                  believe that my career as a hairdresser shows a lot about my
+                  drive and passion for anything that I do. <br /> <br /> I
+                  began my career as a salon receptionist, working my way up to
+                  becoming a top stylist. I have had the honor to work for
+                  fashion weeks in cities like Paris, Bangkok, and New York
+                  City. I’ve worked with top names in the industry such as Annie
+                  Leibovitz, Karlie Kloss, and Anna Wintour. I’ve been able to
+                  showcase my work in magazines such as Vogue and Glamour.{" "}
+                  <br /> <br /> With the amazing opportunities I received in my
+                  career, I knew it that it was time to embark on a new journey.
+                  This is just the beginning, but I am ready to learn from
+                  anyone willing to teach. I hope to have a similar experience
+                  in the tech world as I did in hair.
+                </div>
+                <a href="https://onedrive.live.com/?cid=16B5F7A0F7688699&id=16B5F7A0F7688699%211905&parId=root&o=OneUp">
+                  <button className="about-button mt-5">Resume</button>
+                </a>
+              </Col>
+              <Col xs={12} lg={5} className="text-center mt-5 pt-2 mt-lg-0">
+                <div className="about-photo">
+                  <img src={me} height="500px" alt="me"></img>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
       </>
     );
