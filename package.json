@@ -1,6 +1,5 @@
 {
   "name": "jerrysipdesign",
-  "homepage": "https://github.com/jerrysip/jerrysipdesign/blob/main/src/components/HomeComponent.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
