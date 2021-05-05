@@ -3,13 +3,13 @@ import HomeComponent from "./components/HomeComponent";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <Router basename={"./components/HomeComponent"}>
+      <Router>
         <Navbar />
         <Switch>
           <Route exact path="/home" component={HomeComponent} />

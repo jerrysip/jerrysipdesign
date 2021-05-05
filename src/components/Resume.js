@@ -49,7 +49,10 @@ class Resume extends Component {
                   anyone willing to teach. I hope to have a similar experience
                   in the tech world as I did in hair.
                 </div>
-                <a href="https://onedrive.live.com/?cid=16B5F7A0F7688699&id=16B5F7A0F7688699%211905&parId=root&o=OneUp">
+                <a
+                  href="https://onedrive.live.com/?cid=16B5F7A0F7688699&id=16B5F7A0F7688699%211905&parId=root&o=OneUp"
+                  target="_blank"
+                >
                   <button className="about-button mt-5">Resume</button>
                 </a>
               </Col>
