@@ -1,5 +1,5 @@
 import React from "react";
-import Figure from "react-bootstrap/Figure";
+
 import "../css/Projects.css";
 import vidproject from "../images/projects.mp4";
 import jerrysiphair from "../images/jerrysiphair.jpeg";

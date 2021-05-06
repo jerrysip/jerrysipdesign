@@ -1,15 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Col,
-  Row,
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormText,
-} from "reactstrap";
+import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import "../css/Contact.css";
 
 class Contact extends Component {

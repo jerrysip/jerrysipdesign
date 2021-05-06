@@ -52,6 +52,7 @@ class Resume extends Component {
                 <a
                   href="https://onedrive.live.com/?cid=16B5F7A0F7688699&id=16B5F7A0F7688699%211905&parId=root&o=OneUp"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button className="about-button mt-5">Resume</button>
                 </a>

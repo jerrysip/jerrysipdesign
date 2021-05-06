@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import hero from "../images/hero.MOV";
 import "../css/HomeComponent.css";
-import Navbar from "../components/Navbar";
 
 export default class HomeComponent extends Component {
   render() {
