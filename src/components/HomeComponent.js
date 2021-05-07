@@ -24,16 +24,16 @@ export default class HomeComponent extends Component {
             autoPlay
             loop
             muted
-            style={{
-              position: "absolute",
-              width: "100%",
-              left: "50%",
-              top: "50%",
-              height: "110vh",
-              objectFit: "cover",
-              transform: "translate(-50%, -50%)",
-              zIndex: "-1",
-            }}
+            // style={{
+            //   position: "absolute",
+            //   width: "100%",
+            //   left: "50%",
+            //   top: "50%",
+            //   height: "110vh",
+            //   objectFit: "cover",
+            //   transform: "translate(-50%, -50%)",
+            //   zIndex: "-1",
+            // }}
           >
             <source src={hero} type="video/mp4" />
           </video>
