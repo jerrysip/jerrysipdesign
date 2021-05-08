@@ -23,14 +23,10 @@ class Contact extends Component {
                   className="email-form"
                   type="text"
                   name="name"
-                  placeholder="Enter your name"
+                  placeholder="Name"
                 />
                 <br />
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Enter your email"
-                />
+                <input type="text" name="email" placeholder="Email" />
                 <br />
                 <textarea
                   className="message-form"

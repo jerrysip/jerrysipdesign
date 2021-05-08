@@ -73,3 +73,15 @@ textarea:focus {
 h1 {
   font-size: 3rem;
 }
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  font-size: 1.1rem;
+}

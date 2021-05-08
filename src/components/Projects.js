@@ -51,9 +51,14 @@ export default function Projects() {
               lg={4}
               xl={6}
               className="text-center mt-5 mt-lg-0 pt-5"
+              style={{
+                backgroundColor: "white",
+                position: "relative",
+                bottom: ".5rem",
+              }}
             >
               {" "}
-              <div className="hair-detail">
+              <div className="hair-detail mt-4">
                 <h2 className="hair-title">JERRYSIPHAIR</h2>
                 <br />
                 <p>HTML/CSS</p>
@@ -62,7 +67,11 @@ export default function Projects() {
                 <p>REACT</p>
                 <p>BOOTSTRAP</p>
                 <p>REACTSTRAP</p>
-                <a href="http://www.jerrysiphair.com">
+                <a
+                  href="http://www.jerrysiphair.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="hair-button">Check it out</button>
                 </a>
               </div>
@@ -87,7 +96,11 @@ export default function Projects() {
                 <p>MERN Stack</p>
                 <p>StripeAPI</p>
                 <p>MailChimp</p>
-                <a href="https://ecstatic-minsky-efc4e4.netlify.app/">
+                <a
+                  href="https://ecstatic-minsky-efc4e4.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="illission-button">Check it out</button>
                 </a>
               </div>

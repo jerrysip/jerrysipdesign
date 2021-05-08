@@ -6,6 +6,7 @@
   position: relative;
   width: 100%;
   top: 80vh;
+  z-index: 100000;
 }
 
 h2,
