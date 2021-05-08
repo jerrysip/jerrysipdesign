@@ -43,6 +43,7 @@ textarea {
   background: transparent;
   color: white;
   padding: 10px;
+  border: 1px solid white;
 }
 
 form {
@@ -74,14 +75,14 @@ h1 {
   font-size: 3rem;
 }
 
-button:active {
+.sub-btn:active {
   outline: none;
 }
 
-button:focus {
+.sub-btn:focus {
   outline: none;
 }
 
-button:hover {
+.sub-btn:hover {
   font-size: 1.1rem;
 }
