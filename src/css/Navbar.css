@@ -1,6 +1,9 @@
+.nav-wrap {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .NavbarItems {
-  background: black;
-  opacity: 70% !important;
+  /* background: black; */
   height: 60px;
   position: sticky;
   font-size: 1.2rem;
@@ -13,7 +16,6 @@
   float: left;
   padding-left: 14px;
   position: relative;
-
   top: 0.75rem;
   font-family: "Libre Caslon Display", sans-serif;
   cursor: pointer;
