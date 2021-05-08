@@ -143,3 +143,9 @@ p {
     padding-top: 1rem;
   }
 }
+
+@media (max-width: 650px) {
+  .hair-photo {
+    padding-left: 0;
+  }
+}

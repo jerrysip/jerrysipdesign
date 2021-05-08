@@ -1,19 +1,56 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
+import { Col, Row, Container } from "reactstrap";
 import "../css/Contact.css";
 
 class Contact extends Component {
   render() {
     return (
       <div className="contact-wrapper">
-        <form name="contact-form" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact-form" />
-          <input type="text" name="name" placeholder="Enter your name" />
-          <input type="text" name="email" placeholder="Enter your email" />
-          <textarea placeholder="Enter a message" name="message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        <Container fluid className="text-center pl-0">
+          <Row>
+            <Col className="mt-5 pt-5">
+              <h1 className="mt-5 pt-5 text-white">Contact Me</h1>
+              <form name="contact-form" method="POST" data-netlify="true">
+                <input
+                  className="name-form"
+                  type="hidden"
+                  name="form-name"
+                  value="contact-form"
+                />
+
+                <input
+                  className="email-form"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+                <br />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <br />
+                <textarea
+                  className="message-form"
+                  placeholder="Enter a message"
+                  name="message"
+                ></textarea>
+                <br />
+                <button
+                  onClick={() => {
+                    alert("thank you!");
+                  }}
+                  className="sub-btn"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </form>
+            </Col>
+          </Row>
+        </Container>
         {/* <Form
           name="contact"
           method="POST"
