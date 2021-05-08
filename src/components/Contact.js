@@ -30,16 +30,11 @@ class Contact extends Component {
   };
 
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
   render() {
     const { name, email, message } = this.state;
     return (
-      <form
-        name="contact"
-        netlify
-        netlify-honeypot="bot-field"
-        hidden
-        onSubmit={this.handleSubmit}
-      >
+      <form onSubmit={this.handleSubmit}>
         <p>
           <label>
             Your Name:{" "}
