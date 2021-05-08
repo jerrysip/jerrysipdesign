@@ -7,7 +7,7 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-wrapper">
-        <form action="POST" data-netlify="true">
+        <form method="POST" data-netlify="true">
           <div class="fields">
             <div class="field half">
               <input type="text" name="name" id="name" placeholder="NAME" />
