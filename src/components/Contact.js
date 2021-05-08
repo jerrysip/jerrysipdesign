@@ -7,9 +7,39 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-wrapper">
-        <Form
+        <form action="POST" data-netlify="true">
+          <div class="fields">
+            <div class="field half">
+              <input type="text" name="name" id="name" placeholder="NAME" />
+            </div>
+            <div class="field half">
+              <input type="email" name="email" id="email" placeholder="EMAIL" />
+            </div>
+            <div class="field half">
+              <input
+                type="message"
+                name="message"
+                id="message"
+                placeholder="MESSAGE"
+              />
+            </div>
+            <div class="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="button primary"
+                />
+              </li>
+            </ul>
+          </div>
+        </form>
+        {/* <Form
           name="contact"
-          method="post"
+          method="POST"
           data-netlify="true"
           onSubmit="submit"
           data-netlify-honeypot="bot-field"
@@ -63,7 +93,7 @@ class Contact extends Component {
           <Button type="submit" className="contact-button" color="light">
             Send
           </Button>
-        </Form>
+        </Form> */}
       </div>
     );
   }

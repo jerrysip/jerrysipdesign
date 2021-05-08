@@ -14,3 +14,9 @@
   width: 100vh;
   z-index: 10000000;
 }
+
+form {
+  position: relative;
+  top: 15rem;
+  padding-left: 10rem;
+}
