@@ -7,7 +7,7 @@ import { Container, Col, Row } from "react-bootstrap";
 class Resume extends Component {
   render() {
     return (
-      <>
+      <div className="res-wrap">
         {/* <h1 className="aboutheader">About Me</h1>
         <div className="resume-wrapper">
           <div className="about-me">
@@ -27,7 +27,7 @@ class Resume extends Component {
 
         <div className="resume-wrapper">
           <Container fluid className="mt-5 pt-5 ml-3 pl-0 pl-lg-5 ml-lg-5">
-            <Row>
+            <Row className="mt-5 pt-5">
               <Col xs={12} lg={7} className=" text-center text-white">
                 <h1 className="about-me">About Me</h1>
                 <div className="about-me mt-3">
@@ -65,7 +65,7 @@ class Resume extends Component {
             </Row>
           </Container>
         </div>
-      </>
+      </div>
     );
   }
 }

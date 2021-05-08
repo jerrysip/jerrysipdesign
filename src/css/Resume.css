@@ -7,6 +7,11 @@
   flex-direction: row;
 }
 
+.res-wrap {
+  background: black;
+  position: relative;
+  bottom: 4rem;
+}
 .about-button {
   background-color: rgb(51, 51, 51);
   color: white;
