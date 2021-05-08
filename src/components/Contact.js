@@ -7,35 +7,50 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-wrapper">
-        <form method="POST" data-netlify="true">
-          <div class="fields">
-            <div class="field half">
-              <input type="text" name="name" id="name" placeholder="NAME" />
-            </div>
-            <div class="field half">
-              <input type="email" name="email" id="email" placeholder="EMAIL" />
-            </div>
-            <div class="field half">
-              <input
-                type="message"
-                name="message"
-                id="message"
-                placeholder="MESSAGE"
-              />
-            </div>
-            <div class="field">
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-            <ul class="actions">
-              <li>
-                <input
-                  type="submit"
-                  value="Send Message"
-                  class="button primary"
-                />
-              </li>
-            </ul>
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          onSubmit="submit"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact v2" />
+
+          <div hidden>
+            <input name="bot-field" />
           </div>
+
+          <div>
+            <label>
+              First name
+              <br />
+              <input type="text" name="first-name" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Last name
+              <br />
+              <input type="text" name="last-name" />
+            </label>
+          </div>
+
+          <div>
+            <label htmlFor="email">Email</label>
+            <br />
+            <input id="email" type="email" name="email" />
+          </div>
+
+          <div>
+            <label>
+              Any Comments?
+              <br />
+              <textarea name="comments"></textarea>
+            </label>
+          </div>
+
+          <button type="submit">Submit The Results</button>
         </form>
         {/* <Form
           name="contact"
