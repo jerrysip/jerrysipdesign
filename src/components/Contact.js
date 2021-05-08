@@ -3,113 +3,73 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import "../css/Contact.css";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
+    const { name, email, message } = this.state;
     return (
-      <div className="contact-wrapper">
-        <form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          onSubmit="submit"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact v2" />
-
-          <div hidden>
-            <input name="bot-field" />
-          </div>
-
-          <div>
-            <label>
-              First name
-              <br />
-              <input type="text" name="first-name" />
-            </label>
-          </div>
-
-          <div>
-            <label>
-              Last name
-              <br />
-              <input type="text" name="last-name" />
-            </label>
-          </div>
-
-          <div>
-            <label htmlFor="email">Email</label>
-            <br />
-            <input id="email" type="email" name="email" />
-          </div>
-
-          <div>
-            <label>
-              Any Comments?
-              <br />
-              <textarea name="comments"></textarea>
-            </label>
-          </div>
-
-          <button type="submit">Submit The Results</button>
-        </form>
-        {/* <Form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          onSubmit="submit"
-          data-netlify-honeypot="bot-field"
-          style={{ padding: "60px", paddingTop: "170px" }}
-        >
-          <input type="hidden" name="form-name" value="contact v2" />
-          <Row form>
-            <Col md={6}>
-              <FormGroup>
-                <Label className="text-white" for="first-name ">
-                  First Name
-                </Label>
-                <Input
-                  type="first-name"
-                  name="first-name"
-                  id="first-name"
-                  placeholder="First-Name"
-                />
-              </FormGroup>
-            </Col>
-            <Col md={6}>
-              <FormGroup>
-                <Label className="text-white" for="last-name">
-                  Last Name
-                </Label>
-                <Input
-                  type="last-name"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Last Name"
-                />
-              </FormGroup>
-            </Col>
-          </Row>
-          <FormGroup>
-            <Label className="text-white" for="e-mail">
-              E-mail Address
-            </Label>
-            <Input type="text" name="e-mail" id="e-mail" placeholder="E-mail" />
-          </FormGroup>
-          <FormGroup>
-            <Input
-              className="mt-5"
-              type="textarea"
-              name="text"
-              id="exampleText"
-              placeholder="Write me a message..."
+      <form onSubmit={this.handleSubmit}>
+        <p>
+          <label>
+            Your Name:{" "}
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={this.handleChange}
             />
-          </FormGroup>
-
-          <Button type="submit" className="contact-button" color="light">
-            Send
-          </Button>
-        </Form> */}
-      </div>
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email:{" "}
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:{" "}
+            <textarea
+              name="message"
+              value={message}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     );
   }
 }
