@@ -47,7 +47,7 @@ class Resume extends Component {
                   career, I knew it that it was time to embark on a new journey.
                   This is just the beginning, but I am ready to learn from
                   anyone willing to teach. I hope to have a similar experience
-                  in the tech world as I did in hair.
+                  in the tech world as I did in hair!
                 </div>
                 <a
                   href="https://onedrive.live.com/?cid=16B5F7A0F7688699&id=16B5F7A0F7688699%211905&parId=root&o=OneUp"
