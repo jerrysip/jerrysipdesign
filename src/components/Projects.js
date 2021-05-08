@@ -168,7 +168,14 @@ export default function Projects() {
                 <p>REACT</p>
                 <p>BOOTSTRAP</p>
                 <p>REACTSTRAP</p>
-                <button className="camp-button">Check it out</button>
+
+                <a
+                  href="https://6096dd237d651bdeb888534d--elated-wozniak-156dda.netlify.app/home"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="camp-button">Check it out</button>
+                </a>
               </div>
             </Col>
             <Col
