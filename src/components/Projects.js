@@ -97,7 +97,7 @@ export default function Projects() {
                 <p>StripeAPI</p>
                 <p>MailChimp</p>
                 <a
-                  href="https://ecstatic-minsky-efc4e4.netlify.app/"
+                  href="https://www.jerrysip.com"
                   target="_blank"
                   rel="noreferrer"
                 >
