@@ -97,7 +97,7 @@ export default function Projects() {
                 <p>StripeAPI</p>
                 <p>MailChimp</p>
                 <a
-                  href="https://www.jerrysip.com"
+                  href="https://www.theillissionproject.com"
                   target="_blank"
                   rel="noreferrer"
                 >
